@@ -1,0 +1,150 @@
+<template>
+	<el-tooltip
+		:effect="effect"
+		:content="content"
+		:placement="placement"
+		:v-model="value"
+		:disabled="disabled"
+		:offset="offset"
+		:transition="transition"
+		:visible-arrow="visibleArrow"
+		:popper-options="popperOptions"
+		:open-delay="openDelay"
+		:manual="manual"
+		:popper-class="popperClass"
+		:enterable="enterable"
+		:hide-after="hideAfter"
+		:tabindex="tabindex"
+	>
+		<el-button
+			:size="size"
+			:type="type"
+			:plain="plain"
+			:round="round"
+			:circle="circle"
+			:loading="loading"
+			:disabled="buttonDisabled"
+			:icon="icon"
+			:autofocus="autofocus"
+			:native-type="nativeType"
+		>
+			<span v-if="$slots.default"><slot></slot></span>
+		</el-button>
+	</el-tooltip>
+</template>
+
+<script>
+export default{
+	data(){
+		return {
+			
+		}
+	},methods:{
+		
+	},props:{
+		effect:{
+			type:String,
+			default:"dark",
+		},
+		content:{
+			type:String,
+			default:""
+		},
+		placement:{
+			type:String,
+			default:"top"
+		},
+		value:{
+			type:Boolean,
+			default:false
+		},
+		disabled:{
+			type:Boolean,
+			default:false
+		},
+		offset:{
+			type:Number,
+			default:0
+		},
+		transition:{
+			type:String,
+			default:"el-fade-in-linear"
+		},
+		visibleArrow:{
+			type:Boolean,
+			default:true
+		},
+		popperOptions:{
+			type:Object,
+			default:()=>{return { boundariesElement: 'body', gpuAcceleration: false }}
+		},
+		openDelay:{
+			type:Number,
+			default:0
+		},
+		manual:{
+			type:Boolean,
+			default:false
+		},
+		popperClass:{
+			type:String,
+			default:""
+		},
+		enterable:{
+			type:Boolean,
+			default:true
+		},
+		hideAfter:{
+			type:Number,
+			default:0
+		},
+		tabindex:{
+			type:Number,
+			default:0
+		},
+		size:{
+			type:String,
+			default:""
+		},
+		type:{
+			type:String,
+			default:""
+		},
+		plain:{
+			type:Boolean,
+			default:false
+		},
+		round:{
+			type:Boolean,
+			default:false
+		},
+		circle:{
+			type:Boolean,
+			default:false
+		},
+		loading:{
+			type:Boolean,
+			default:false
+		},
+		buttonDisabled:{
+			type:Boolean,
+			default:false
+		},
+		icon:{
+			type:String,
+			default:""
+		},
+		autofocus:{
+			type:Boolean,
+			default:false
+		},
+		nativeType:{
+			type:String,
+			default:"button"
+		},
+	}
+}
+	
+</script>
+
+<style></style>
