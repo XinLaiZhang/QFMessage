@@ -1,0 +1,4 @@
+rootProject.name = 'QFMessage'
+include 'miraiServer'
+include 'webServer'
+

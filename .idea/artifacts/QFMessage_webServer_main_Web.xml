@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="QFMessage.webServer.main:Web">
+    <output-path>$PROJECT_DIR$/out/artifacts/QFMessage_webServer_main_Web</output-path>
+    <root id="archive" name="QFMessage.webServer.main_Web.war">
+      <element id="artifact" artifact-name="QFMessage.webServer.main:Web exploded" />
+    </root>
+  </artifact>
+</component>

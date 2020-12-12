@@ -1,0 +1,14 @@
+miraiServer/src/main/resources/db.properties
+miraiServer/src/main/resources/RSAKey.properties
+/QFMessage_web/node_modules/
+/QFMessage_web/dist/
+/out/
+/miraiServer/build/
+/webServer/build/
+/webServer/out/
+/.gradle/
+/miraiServer/out/
+miraiServer/src/main/resources/config/listenerConfig.properties
+webServer/src/main/resources/listenerConfig.properties
+/webServer/src/main/resources/db.properties
+/webServer/src/main/resources/config/mybatis/generatorConfig.xml
